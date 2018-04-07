@@ -116,6 +116,7 @@
    <!-- script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
+	<script src="js/countdown.js"></script> 
 
    <!-- favicons
 	================================================== -->
@@ -162,14 +163,24 @@
 		   			<div id="counter">
 		   				<div class="half">
 		   					<span>7 <sup>days</sup></span> 
-		 						<!-- <span>23 <sup>hours</sup></span>-->
+		 					<span>23 <sup>hours</sup></span>
+		 					<div class="countDown">
+					           	<span id="days">07 <sup>days</sup></span>    <!-- Remaining Days,id="days"-->
+					           	<span id="hours">00<sup>hours</sup></span>  <!-- Remaining hours ,id="hours"-->
+					           	<span id="minutes">00<sup>minutes</sup></span>  <!-- Remaining minutes,id="minutes"-->
+					           	<span id="seconds">00<sup>seconds</sup></span>  <!-- Remaining secounds,id="secounds"-->
+							</div>	
 		   				</div>
-							<!-- <div class="half">
-								<span>50 <sup>mins</sup></span>
-		 						<span>33 <sup>secs</sup></span>
-		 					</div> -->
 		   			</div>
+					<script>
+					           
+					  countdown('04/14/2018  12:00:00 PM',callback); // Date format ('MM/DD/YYYY  HH:MM:SS TT');
+					            
+					  function callback(){
+					       alert('Time Out'); //Callback Function Definition
 
+					  };
+					</script>
 			  			<div class="bottom-text">
 			  				<h1>RavenCoin Shop is launching soon.</h1>
 				  			<p>
